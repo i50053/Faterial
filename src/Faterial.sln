@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35325.158
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faterial", "Faterial\Faterial.csproj", "{632E6D9E-DA32-4305-A843-858E07B30B9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faterial.Demo", "Faterial.Demo\Faterial.Demo.csproj", "{10B6C7FA-FD93-4DB5-853D-D5B91FDD553D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{632E6D9E-DA32-4305-A843-858E07B30B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{632E6D9E-DA32-4305-A843-858E07B30B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{632E6D9E-DA32-4305-A843-858E07B30B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{632E6D9E-DA32-4305-A843-858E07B30B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10B6C7FA-FD93-4DB5-853D-D5B91FDD553D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B6C7FA-FD93-4DB5-853D-D5B91FDD553D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B6C7FA-FD93-4DB5-853D-D5B91FDD553D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B6C7FA-FD93-4DB5-853D-D5B91FDD553D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27075FB9-6D57-43C1-ADAF-E0A0BB980BD2}
+	EndGlobalSection
+EndGlobal

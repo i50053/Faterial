@@ -1,0 +1,10 @@
+﻿<Window x:Class="Faterial.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Faterial.Demo"
+        Width="1280"
+        MinWidth="320"
+        Height="768"
+        MinHeight="320">
+
+</Window>
