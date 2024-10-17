@@ -2,9 +2,98 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Faterial.Demo"
+        Background="{DynamicResource Brush.Surface}"
+        TextElement.Foreground="{DynamicResource Brush.OnSurface}"
         Width="1280"
         MinWidth="320"
         Height="768"
         MinHeight="320">
+
+    <StackPanel Orientation="Horizontal"
+                Margin="8"
+                SnapsToDevicePixels="True">
+        <!-- Primary Brushes -->
+        <StackPanel Width="240"
+                    Margin="0 0 16 0">
+            <Label Content="Primary"
+                   Background="{DynamicResource Brush.Primary}"
+                   Foreground="{DynamicResource Brush.OnPrimary}"
+                   Height="36" />
+            <Label Content="On Primary"
+                   Background="{DynamicResource Brush.OnPrimary}"
+                   Foreground="{DynamicResource Brush.Primary}"
+                   Height="36"
+                   Margin="0 0 0 16" />
+            
+            <Label Content="Error"
+                   Background="{DynamicResource Brush.Error}"
+                   Foreground="{DynamicResource Brush.OnError}"
+                   Height="36" />
+            <Label Content="On Error"
+                   Background="{DynamicResource Brush.OnError}"
+                   Foreground="{DynamicResource Brush.Error}"
+                   Height="36"
+                   Margin="0 0 0 16" />
+        </StackPanel>
+
+        <!-- Surface Brushes -->
+        <StackPanel Width="240"
+                    Margin="0 0 16 0">
+            <Label Content="Surface"
+                   Background="{DynamicResource Brush.Surface}"
+                   Foreground="{DynamicResource Brush.OnSurface}"
+                   Height="36" />
+
+            <Label Content="On Surface"
+                   Background="{DynamicResource Brush.OnSurface}"
+                   Foreground="{DynamicResource Brush.Surface}"
+                   Height="36" />
+            <Label Content="On Surface Variant"
+                   Background="{DynamicResource Brush.OnSurface.Variant}"
+                   Foreground="{DynamicResource Brush.Surface}"
+                   Height="36"
+                   Margin="0 0 0 16" />
+            
+            <Label Content="Surface Container"
+                   Background="{DynamicResource Brush.Surface.Container}"
+                   Foreground="{DynamicResource Brush.OnSurface}"
+                   Height="36"
+                   Margin="0 0 0 16" />
+        </StackPanel>
+
+        <!-- Outline Brushes -->
+        <StackPanel Width="240"
+                    Margin="0 0 16 0">
+            <Label Content="Outline"
+                   Background="{DynamicResource Brush.Outline}"
+                   Foreground="{DynamicResource Brush.Surface}"
+                   Height="36" />
+            <Label Content="Outline Variant"
+                   Background="{DynamicResource Brush.Outline.Variant}"
+                   Foreground="{DynamicResource Brush.OnSurface}"
+                   Height="36"
+                   Margin="0 0 0 16" />
+        </StackPanel>
+
+        <!-- Inverse Brushes -->
+        <StackPanel Width="240"
+                    Margin="0 0 16 0">
+            <Label Content="Inverse Surface"
+                   Background="{DynamicResource Brush.Inverse.Surface}"
+                   Foreground="{DynamicResource Brush.Inverse.OnSurface}"
+                   Height="36" />
+            <Label Content="Inverse On Surface"
+                   Background="{DynamicResource Brush.Inverse.OnSurface}"
+                   Foreground="{DynamicResource Brush.Inverse.Surface}"
+                   Height="36"
+                   Margin="0 0 0 16" />
+
+            <Label Content="Inverse Primary"
+                   Background="{DynamicResource Brush.Inverse.Primary}"
+                   Foreground="{DynamicResource Brush.Inverse.Surface}"
+                   Height="36"
+                   Margin="0 0 0 16" />
+        </StackPanel>
+    </StackPanel>
 
 </Window>
