@@ -3,97 +3,72 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Faterial.Demo"
         Background="{DynamicResource Brush.Surface}"
+        TextElement.FontFamily="{StaticResource FontFamily.Default}"
+        TextElement.FontWeight="{StaticResource FontWeight.Body2}"
+        TextElement.FontSize="{StaticResource FontSize.Body2}"
         TextElement.Foreground="{DynamicResource Brush.OnSurface}"
         Width="1280"
         MinWidth="320"
         Height="768"
         MinHeight="320">
 
-    <StackPanel Orientation="Horizontal"
-                Margin="8"
-                SnapsToDevicePixels="True">
-        <!-- Primary Brushes -->
-        <StackPanel Width="240"
-                    Margin="0 0 16 0">
-            <Label Content="Primary"
-                   Background="{DynamicResource Brush.Primary}"
-                   Foreground="{DynamicResource Brush.OnPrimary}"
-                   Height="36" />
-            <Label Content="On Primary"
-                   Background="{DynamicResource Brush.OnPrimary}"
-                   Foreground="{DynamicResource Brush.Primary}"
-                   Height="36"
-                   Margin="0 0 0 16" />
-            
-            <Label Content="Error"
-                   Background="{DynamicResource Brush.Error}"
-                   Foreground="{DynamicResource Brush.OnError}"
-                   Height="36" />
-            <Label Content="On Error"
-                   Background="{DynamicResource Brush.OnError}"
-                   Foreground="{DynamicResource Brush.Error}"
-                   Height="36"
-                   Margin="0 0 0 16" />
-        </StackPanel>
-
-        <!-- Surface Brushes -->
-        <StackPanel Width="240"
-                    Margin="0 0 16 0">
-            <Label Content="Surface"
-                   Background="{DynamicResource Brush.Surface}"
-                   Foreground="{DynamicResource Brush.OnSurface}"
-                   Height="36" />
-
-            <Label Content="On Surface"
-                   Background="{DynamicResource Brush.OnSurface}"
-                   Foreground="{DynamicResource Brush.Surface}"
-                   Height="36" />
-            <Label Content="On Surface Variant"
-                   Background="{DynamicResource Brush.OnSurface.Variant}"
-                   Foreground="{DynamicResource Brush.Surface}"
-                   Height="36"
-                   Margin="0 0 0 16" />
-            
-            <Label Content="Surface Container"
-                   Background="{DynamicResource Brush.Surface.Container}"
-                   Foreground="{DynamicResource Brush.OnSurface}"
-                   Height="36"
-                   Margin="0 0 0 16" />
-        </StackPanel>
-
-        <!-- Outline Brushes -->
-        <StackPanel Width="240"
-                    Margin="0 0 16 0">
-            <Label Content="Outline"
-                   Background="{DynamicResource Brush.Outline}"
-                   Foreground="{DynamicResource Brush.Surface}"
-                   Height="36" />
-            <Label Content="Outline Variant"
-                   Background="{DynamicResource Brush.Outline.Variant}"
-                   Foreground="{DynamicResource Brush.OnSurface}"
-                   Height="36"
-                   Margin="0 0 0 16" />
-        </StackPanel>
-
-        <!-- Inverse Brushes -->
-        <StackPanel Width="240"
-                    Margin="0 0 16 0">
-            <Label Content="Inverse Surface"
-                   Background="{DynamicResource Brush.Inverse.Surface}"
-                   Foreground="{DynamicResource Brush.Inverse.OnSurface}"
-                   Height="36" />
-            <Label Content="Inverse On Surface"
-                   Background="{DynamicResource Brush.Inverse.OnSurface}"
-                   Foreground="{DynamicResource Brush.Inverse.Surface}"
-                   Height="36"
-                   Margin="0 0 0 16" />
-
-            <Label Content="Inverse Primary"
-                   Background="{DynamicResource Brush.Inverse.Primary}"
-                   Foreground="{DynamicResource Brush.Inverse.Surface}"
-                   Height="36"
-                   Margin="0 0 0 16" />
-        </StackPanel>
+    <StackPanel Margin="8">
+        <TextBlock Text="Headline 1/Segoe UI/Light/86px"
+                   FontWeight="{StaticResource FontWeight.Headline1}"
+                   FontSize="{StaticResource FontSize.Headline1}"
+                   Margin="0 -16 0 0" />
+        <TextBlock Text="Headline 2/Segoe UI/Light/54px"
+                   FontWeight="{StaticResource FontWeight.Headline2}"
+                   FontSize="{StaticResource FontSize.Headline2}"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="Headline 3/Segoe UI/Regular/42px"
+                   FontWeight="{StaticResource FontWeight.Headline3}"
+                   FontSize="{StaticResource FontSize.Headline3}"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="Headline 4/Segoe UI/Regular/28px"
+                   FontWeight="{StaticResource FontWeight.Headline4}"
+                   FontSize="{StaticResource FontSize.Headline4}"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="Headline 5/Segoe UI/Regular/22px"
+                   FontWeight="{StaticResource FontWeight.Headline5}"
+                   FontSize="{StaticResource FontSize.Headline5}"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="Headline 6/Segoe UI/Medium/18px"
+                   FontWeight="{StaticResource FontWeight.Headline6}"
+                   FontSize="{StaticResource FontSize.Headline6}"
+                   Margin="0 8 0 0" />
+        
+        <TextBlock Text="Subtitle 1/Segoe UI/Regular/15px"
+                   FontWeight="{StaticResource FontWeight.Subtitle1}"
+                   FontSize="{StaticResource FontSize.Subtitle1}"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="Subtitle 2/Segoe UI/Medium/13px"
+                   FontWeight="{StaticResource FontWeight.Subtitle2}"
+                   FontSize="{StaticResource FontSize.Subtitle2}"
+                   Margin="0 8 0 0" />
+        
+        <TextBlock Text="Body 1/Segoe UI/Regular/15px"
+                   FontWeight="{StaticResource FontWeight.Body1}"
+                   FontSize="{StaticResource FontSize.Body1}"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="Body 2/Segoe UI/Regular/13px"
+                   FontWeight="{StaticResource FontWeight.Body2}"
+                   FontSize="{StaticResource FontSize.Body2}"
+                   Margin="0 8 0 0" />
+        
+        <TextBlock Text="BUTTON/SEGOE UI/MEDIUM/13PX"
+                   FontWeight="{StaticResource FontWeight.Button}"
+                   FontSize="{StaticResource FontSize.Button}"
+                   Margin="0 8 0 0" />
+        
+        <TextBlock Text="Caption/Segoe UI/Regular/12px"
+                   FontWeight="{StaticResource FontWeight.Caption}"
+                   FontSize="{StaticResource FontSize.Caption}"
+                   Margin="0 8 0 0" />
+        <TextBlock Text="OVERLINE/SEGOE UI/REGULAR/10PX"
+                   FontWeight="{StaticResource FontWeight.Overline}"
+                   FontSize="{StaticResource FontSize.Overline}"
+                   Margin="0 8 0 0" />
     </StackPanel>
 
 </Window>

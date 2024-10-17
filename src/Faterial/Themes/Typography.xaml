@@ -1,0 +1,46 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!-- FontFamily -->
+    <FontFamily x:Key="FontFamily.Default">Segoe UI</FontFamily>
+
+    <!-- FontWeight -->
+    <FontWeight x:Key="FontWeight.Headline1">Light</FontWeight>
+    <FontWeight x:Key="FontWeight.Headline2">Light</FontWeight>
+    <FontWeight x:Key="FontWeight.Headline3">Regular</FontWeight>
+    <FontWeight x:Key="FontWeight.Headline4">Regular</FontWeight>
+    <FontWeight x:Key="FontWeight.Headline5">Regular</FontWeight>
+    <FontWeight x:Key="FontWeight.Headline6">Medium</FontWeight>
+
+    <FontWeight x:Key="FontWeight.Subtitle1">Regular</FontWeight>
+    <FontWeight x:Key="FontWeight.Subtitle2">Medium</FontWeight>
+
+    <FontWeight x:Key="FontWeight.Body1">Regular</FontWeight>
+    <FontWeight x:Key="FontWeight.Body2">Regular</FontWeight>
+
+    <FontWeight x:Key="FontWeight.Button">Medium</FontWeight>
+
+    <FontWeight x:Key="FontWeight.Caption">Regular</FontWeight>
+    <FontWeight x:Key="FontWeight.Overline">Regular</FontWeight>
+
+    <!-- FontSize -->
+    <system:Double x:Key="FontSize.Headline1">86</system:Double>
+    <system:Double x:Key="FontSize.Headline2">54</system:Double>
+    <system:Double x:Key="FontSize.Headline3">42</system:Double>
+    <system:Double x:Key="FontSize.Headline4">28</system:Double>
+    <system:Double x:Key="FontSize.Headline5">22</system:Double>
+    <system:Double x:Key="FontSize.Headline6">18</system:Double>
+
+    <system:Double x:Key="FontSize.Subtitle1">15</system:Double>
+    <system:Double x:Key="FontSize.Subtitle2">13</system:Double>
+
+    <system:Double x:Key="FontSize.Body1">15</system:Double>
+    <system:Double x:Key="FontSize.Body2">13</system:Double>
+
+    <system:Double x:Key="FontSize.Button">13</system:Double>
+
+    <system:Double x:Key="FontSize.Caption">12</system:Double>
+    <system:Double x:Key="FontSize.Overline">10</system:Double>
+
+</ResourceDictionary>
