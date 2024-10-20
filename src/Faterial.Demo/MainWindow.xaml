@@ -1,6 +1,7 @@
 ﻿<Window x:Class="Faterial.Demo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mf="http://schemas.faterial.com/winfx"
         Title="Faterial.Demo"
         Background="{DynamicResource Brush.Surface}"
         TextElement.FontFamily="{StaticResource FontFamily.Default}"
@@ -18,6 +19,8 @@
                 Margin="8">
         <StackPanel.Resources>
             <Style TargetType="{ x:Type Border }">
+                <Setter Property="CornerRadius"
+                        Value="{Binding (mf:ShapeAssist.CornerRadius), RelativeSource={RelativeSource Self}}" />
                 <Setter Property="Background"          Value="#D3E3FD" />
                 <Setter Property="BorderBrush"         Value="#0B57D0" />
                 <Setter Property="BorderThickness"     Value="2" />
@@ -27,17 +30,17 @@
                 <Setter Property="SnapsToDevicePixels" Value="True" />
             </Style>
         </StackPanel.Resources>
-        <Border CornerRadius="0"
+        <Border mf:ShapeAssist.CornerRadius="0"
                 Background="#f9dedc"
                 BorderBrush="#b3261e" />
-        <Border CornerRadius="80"
+        <Border mf:ShapeAssist.CornerRadius="80"
                 Background="#f9dedc"
                 BorderBrush="#b3261e" />
-        <Border CornerRadius="{StaticResource CornerRadius.ExtraSmall}" />
-        <Border CornerRadius="{StaticResource CornerRadius.Small}" />
-        <Border CornerRadius="{StaticResource CornerRadius.Medium}" />
-        <Border CornerRadius="{StaticResource CornerRadius.Large}" />
-        <Border CornerRadius="{StaticResource CornerRadius.ExtraLarge}" />
+        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.ExtraSmall}" />
+        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.Small}" />
+        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.Medium}" />
+        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.Large}" />
+        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.ExtraLarge}" />
     </StackPanel>
 
 </Window>
