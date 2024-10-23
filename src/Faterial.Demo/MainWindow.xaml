@@ -17,30 +17,50 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Margin="8">
-        <StackPanel.Resources>
-            <Style TargetType="{ x:Type Border }">
-                <Setter Property="CornerRadius"
-                        Value="{Binding (mf:ShapeAssist.CornerRadius), RelativeSource={RelativeSource Self}}" />
-                <Setter Property="Background"          Value="#D3E3FD" />
-                <Setter Property="BorderBrush"         Value="#0B57D0" />
-                <Setter Property="BorderThickness"     Value="2" />
-                <Setter Property="Width"               Value="160" />
-                <Setter Property="Height"              Value="160" />
-                <Setter Property="Margin"              Value="0 0 8 0" />
-                <Setter Property="SnapsToDevicePixels" Value="True" />
-            </Style>
-        </StackPanel.Resources>
-        <Border mf:ShapeAssist.CornerRadius="0"
-                Background="#f9dedc"
-                BorderBrush="#b3261e" />
-        <Border mf:ShapeAssist.CornerRadius="80"
-                Background="#f9dedc"
-                BorderBrush="#b3261e" />
-        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.ExtraSmall}" />
-        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.Small}" />
-        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.Medium}" />
-        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.Large}" />
-        <Border mf:ShapeAssist.CornerRadius="{StaticResource CornerRadius.ExtraLarge}" />
+        <Border Background="{DynamicResource Brush.Surface}"
+                BorderBrush="{DynamicResource Brush.Outline.Variant}"
+                BorderThickness="1"
+                CornerRadius="4"
+                Width="160"
+                Height="160"
+                Margin="0 0 8 0" />
+
+        <Border Effect="{StaticResource DropShadow.Level1}"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Width="160"
+                Height="160"
+                Margin="0 0 8 0" />
+        <Border Effect="{StaticResource DropShadow.Level2}"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Width="160"
+                Height="160"
+                Margin="0 0 8 0" />
+        <Border Effect="{StaticResource DropShadow.Level3}"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Width="160"
+                Height="160"
+                Margin="0 0 8 0" />
+        <Border Effect="{StaticResource DropShadow.Level4}"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Width="160"
+                Height="160"
+                Margin="0 0 8 0" />
+        <Border Effect="{StaticResource DropShadow.Level5}"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Width="160"
+                Height="160"
+                Margin="0 0 8 0" />
+        <Border Effect="{StaticResource DropShadow.Level6}"
+                Background="{DynamicResource Brush.Surface}"
+                CornerRadius="4"
+                Width="160"
+                Height="160"
+                Margin="0 0 8 0" />
     </StackPanel>
 
 </Window>
