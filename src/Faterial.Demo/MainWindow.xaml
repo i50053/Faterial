@@ -17,50 +17,79 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Margin="8">
-        <Border Background="{DynamicResource Brush.Surface}"
-                BorderBrush="{DynamicResource Brush.Outline.Variant}"
-                BorderThickness="1"
+        <Border BorderBrush="{DynamicResource Brush.Outline.Variant}"
+                BorderThickness="1" 
                 CornerRadius="4"
                 Width="160"
                 Height="160"
                 Margin="0 0 8 0" />
 
-        <Border Effect="{StaticResource DropShadow.Level1}"
+        <Border mf:ElevationAssist.Level="Level1"
+                Style="{StaticResource Style.BorderESL}"
                 Background="{DynamicResource Brush.Surface}"
                 CornerRadius="4"
                 Width="160"
                 Height="160"
-                Margin="0 0 8 0" />
-        <Border Effect="{StaticResource DropShadow.Level2}"
+                Margin="0 0 8 0">
+            <Border mf:ElevationAssist.Level="Level1"
+                    CornerRadius="4"
+                    Style="{StaticResource Style.BorderEOL}" />
+        </Border>
+        <Border mf:ElevationAssist.Level="Level2"
+                Style="{StaticResource Style.BorderESL}"
                 Background="{DynamicResource Brush.Surface}"
                 CornerRadius="4"
                 Width="160"
                 Height="160"
-                Margin="0 0 8 0" />
-        <Border Effect="{StaticResource DropShadow.Level3}"
+                Margin="0 0 8 0">
+            <Border mf:ElevationAssist.Level="Level2"
+                    CornerRadius="4"
+                    Style="{StaticResource Style.BorderEOL}" />
+        </Border>
+        <Border mf:ElevationAssist.Level="Level3"
+                Style="{StaticResource Style.BorderESL}"
                 Background="{DynamicResource Brush.Surface}"
                 CornerRadius="4"
                 Width="160"
                 Height="160"
-                Margin="0 0 8 0" />
-        <Border Effect="{StaticResource DropShadow.Level4}"
+                Margin="0 0 8 0">
+            <Border mf:ElevationAssist.Level="Level3"
+                    CornerRadius="4"
+                    Style="{StaticResource Style.BorderEOL}" />
+        </Border>
+        <Border mf:ElevationAssist.Level="Level4"
+                Style="{StaticResource Style.BorderESL}"
                 Background="{DynamicResource Brush.Surface}"
                 CornerRadius="4"
                 Width="160"
                 Height="160"
-                Margin="0 0 8 0" />
-        <Border Effect="{StaticResource DropShadow.Level5}"
+                Margin="0 0 8 0">
+            <Border mf:ElevationAssist.Level="Level4"
+                    CornerRadius="4"
+                    Style="{StaticResource Style.BorderEOL}" />
+        </Border>
+        <Border mf:ElevationAssist.Level="Level5"
+                Style="{StaticResource Style.BorderESL}"
                 Background="{DynamicResource Brush.Surface}"
                 CornerRadius="4"
                 Width="160"
                 Height="160"
-                Margin="0 0 8 0" />
-        <Border Effect="{StaticResource DropShadow.Level6}"
+                Margin="0 0 8 0">
+            <Border mf:ElevationAssist.Level="Level5"
+                    CornerRadius="4"
+                    Style="{StaticResource Style.BorderEOL}" />
+        </Border>
+        <Border mf:ElevationAssist.Level="Level6"
+                Style="{StaticResource Style.BorderESL}"
                 Background="{DynamicResource Brush.Surface}"
                 CornerRadius="4"
                 Width="160"
                 Height="160"
-                Margin="0 0 8 0" />
+                Margin="0 0 8 0">
+            <Border mf:ElevationAssist.Level="Level6"
+                    CornerRadius="4"
+                    Style="{StaticResource Style.BorderEOL}" />
+        </Border>
     </StackPanel>
 
 </Window>
